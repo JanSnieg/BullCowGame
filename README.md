@@ -1,6 +1,8 @@
-__________      .__  .__                       .___ _________                                               
-\______   \__ __|  | |  |   _____    ____    __| _/ \_   ___ \  ______  _  __    _________    _____   ____  
- |    |  _/  |  \  | |  |   \__  \  /    \  / __ |  /    \  \/ /  _ \ \/ \/ /   / ___\__  \  /     \_/ __ \ 
- |    |   \  |  /  |_|  |__  / __ \|   |  \/ /_/ |  \     \___(  <_> )     /   / /_/  > __ \|  Y Y  \  ___/ 
- |______  /____/|____/____/ (____  /___|  /\____ |   \______  /\____/ \/\_/    \___  (____  /__|_|  /\___  >
-        \/                       \/     \/      \/          \/                /_____/     \/      \/     \/
+# Bulls and Cows game
+
+### Created and directed by Jon Snow
+---
+## Description:
+* This is simply console game that ask you "Can you guess my _n_ letter word in _2*n-1_ turns?"
+
+You can download, compile and have fun trying it :)
