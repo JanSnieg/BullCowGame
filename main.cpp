@@ -9,16 +9,29 @@ void PrintIntro();
 void PlayGame();
 std::string GetGuess();
 bool AskToPlayAgain();
+void PrintDecsription();
 
 FBullCowGame BCGame;
 
 int main()
 // The entry point of our application
 {
+	int32 i = 0;
 	do
 	{
-		PrintIntro();
-		PlayGame();
+		if (i == 0)
+		{
+			PrintIntro();
+			std::cout << std::endl;
+			PrintDecsription();
+			PlayGame();
+		}
+		else
+		{
+			PrintIntro();
+			PlayGame();
+		}
+		i++;
 	}
 	while (AskToPlayAgain());
 	return 0;
@@ -63,4 +76,11 @@ bool AskToPlayAgain()
 	std::string Response;
 	getline(std::cin, Response);
 	return (Response[0] == 'y' || Response[0] == 'Y');
+}
+
+void PrintDecsription()
+{
+	std::cout << "This is game about trying to guess the word im hiding from you." << std::endl;
+	std::cout << "Bulls means you got right letter in right place." << std::endl;
+	std::cout << "Cows means you got right letter but in wrong place.\nGood luck" << std::endl;
 }
